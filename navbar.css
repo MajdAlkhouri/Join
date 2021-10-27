@@ -1,0 +1,28 @@
+.navbar-container {
+    width: 170px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(20, 20, 185, 0.973);
+}
+
+div.navbar-container img {
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-left: 15px;
+}
