@@ -1,0 +1,77 @@
+span {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+p {
+    color: white;
+}
+
+.header-container{
+    margin-left: 250px;
+    text-align: start;
+}
+
+.addTask-container {
+    background-color: #2066ae;
+    opacity: 0.5;
+    margin-left: 200px;
+    margin-top: 30px;
+    height: 525px;
+ 
+
+}
+
+.formular-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-cont {
+    width: 330px;
+}
+
+.input-field {
+    width: 300px;
+    height: 35px;
+}
+
+.textarea-height {
+    height: 110px;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+     height: 45px;
+     width: 120px;
+     margin: 20px;
+     margin-top: 80px;
+     color: black;
+}
+
+.btn:hover {
+    background-color: rgb(6, 6, 39);
+    color: rgb(253, 253, 253); 
+}
+
+.img-profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 60px;
+   
+}
+
+.img-cont {
+    display: flex;
+    align-items: center;
+
+}
