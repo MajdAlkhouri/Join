@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain h1{
+    color: white;
+}
+
+
+.ToWrite{
+    background-color: rgb(211, 211, 129);
+    width: 175px;
+    height: 600px;
+    opacity: 0.5;
+}
+
+.bg{
+    background-image: url(img/Erde.jpg);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
