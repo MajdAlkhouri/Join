@@ -12,6 +12,7 @@ p {
 .header-container{
     margin-left: 250px;
     text-align: start;
+    padding-top: 20px;
 }
 
 .addTask-container {
