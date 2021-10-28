@@ -1,34 +1,32 @@
-body{
+body {
     margin: 0;
-
 }
 
-.all{
+.all {
     display: flex;
     justify-content: space-between;
     width: 850px;
 }
 
-.contain{
+.contain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contain h1{
+.contain h1 {
     color: white;
 }
 
-
-.ToWrite{
+.ToWrite {
     background-color: rgb(211, 211, 129);
     width: 175px;
     height: 600px;
     opacity: 0.5;
 }
 
-.bg{
+.bg {
     background-image: url(img/Erde.jpg);
     display: flex;
     align-items: flex-start;

@@ -7,5 +7,14 @@ span {
     color: white;
     font-size: 25px;
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.backlog-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2066ae;
+    opacity: 0.5;
+    margin-left: 200px;
+    margin-top: 20px;
 }
