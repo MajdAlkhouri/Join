@@ -1,6 +1,12 @@
+setURL('http://developerakademie.com/smallest_backend_ever');
+
 
 let allTasks = [];
 
+async function init() {
+    await downloadFromServer();
+    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+}
 
 function addTask() {
 let taskTitle = document.getElementById('titleInputfield').value;
@@ -22,8 +28,9 @@ let task = {
 
 allTasks.push(task);
 
-
 let allTasksAsString = JSON.stringify(allTasks); 
-localStorage.setItem('allTasks', allTasksAsString);
+backend.setItem('allTasks', allTasksAsString);
 
+console.log(allTasks);
 }
+
