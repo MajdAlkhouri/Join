@@ -20,42 +20,46 @@
             <span>ADD TASK</span>
             <p>Learning Management System Project</p>
         </div>
-        <div class="addTask-container">
-            <div class="formular-cont">
-                <div class="flex-cont">
-                    <p>TITLE</p>
-                    <input class="input-field" id="titleInputfield" type="text" placeholder="Management meeting preparation">
-                    <p>CATEGORY</p>
-                    <select class="input-field" id="selectCategory" placeholder="Kategorie">
-                        <option>Marketing</option>
-                        <option>Development</option>
-                        <option>Design</option>
-                    </select>
-                    <p>DESCRIPTION</p>
-                    <textarea class="input-field textarea-height" id="descriptionInputfield" cols="30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        <div>
+            <form class="addTask-container" onsubmit="addTask()">
+                <div class="formular-cont">
+                    <div class="flex-cont">
+                        <p>TITLE</p>
+                        <input required minlength="8"  class="input-field" id="titleInputfield" type="text"
+                            placeholder="Management meeting preparation">
+                        <p>CATEGORY</p>
+                        <select required class="input-field" id="selectCategory" placeholder="Kategorie">
+                            <option>Marketing</option>
+                            <option>Development</option>
+                            <option>Design</option>
+                        </select>
+                        <p>DESCRIPTION</p>
+                        <textarea required minlength="15" class="input-field textarea-height" id="descriptionInputfield" cols="30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     </textarea>
-                </div>
-                <div class="flex-cont">
-                    <p>DUE DATE</p>
-                    <input class="input-field" id="dateInputfield" type="date" onfocus="(this.type='date')">
-                    <p>URGENCY</p>
-                    <select class="input-field"  id="selectUrgency" placeholder="Kategorie">
-                        <option>Low</option>
-                        <option>Normal</option>
-                        <option>High</option>
-                    </select>
-                    <p>ASSIGNED TO</p>
-                    <div class="img-cont">
-                        <img class="img-profile" src="img/Peter.jpg">
-                        <p id="taskCreator">NAME</p>
-                        <img src="img/icon plus.png">
+                    </div>
+                    <div class="flex-cont">
+                        <p>DUE DATE</p>
+                        <input required class="input-field" id="dateInputfield" type="date" onfocus="(this.type='date')">
+                        <p>URGENCY</p>
+                        <select required class="input-field" id="selectUrgency" placeholder="Kategorie">
+                            <option>Low</option>
+                            <option>Normal</option>
+                            <option>High</option>
+                        </select>
+                        <p>ASSIGNED TO</p>
+                        <div class="img-cont">
+                            <img class="img-profile" src="img/Peter.jpg">
+                            <p id="taskCreator">NAME</p>
+                            <img src="img/icon plus.png">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="btn-cont">
-                <button class="btn" >CANCEL</button>
-                <button class="btn" onclick="addTask()" >GREATE TASK</button>
-            </div>
+                <div class="btn-cont">
+                   <!-- <button class="btn">CANCEL</button> -->
+                    <button class="btn">GREATE TASK</button>
+                </div>
+            </form>
+
         </div>
 
 

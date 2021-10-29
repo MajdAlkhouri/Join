@@ -22,6 +22,7 @@ let task = {
 
 allTasks.push(task);
 
+
 let allTasksAsString = JSON.stringify(allTasks); 
 localStorage.setItem('allTasks', allTasksAsString);
 
