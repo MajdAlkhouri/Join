@@ -42,8 +42,6 @@
 
 .backlog-box {
     width: 80%;
-    padding: 10px;
-    border: 2px solid #2066ae;
     background-color: white;
     margin-left: 220px;
     margin-right: 50px;
@@ -60,4 +58,32 @@
     height: 100px;
     background-color: black;
     margin-left: 200px;
+}
+
+.Niedrig {
+    background-color: rgb(20, 92, 10);
+    width: 20px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.Normal {
+    background-color: #2066ae;
+    width: 20px;
+    height: 100px;
+    border-radius: 8px;
+    transform: scaleX(0.0);
+}
+
+.Hoch {
+    background-color: rgb(122, 7, 7);
+    width: 20px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.description {
+    width: 40%;
+    max-height: 100px;
+    overflow-y: hidden;
 }
