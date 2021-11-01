@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/backlog.css">
     <script src="js/mini_backend.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/addTask.js"></script>
+    <script src="js/backlog.js"></script>
     <title>Backlog</title>
 </head>
 
-<body onload="includeHTML()">
+<body onload="includeHTML(); showTasks()">
     <div class="bg">
         <div w3-include-html="templates/navbar.html"> </div>
         <table class="titles-backlog">
@@ -24,13 +26,11 @@
             </tr>
         </table>
         <div class="backlog-container"></div>
-        <table class="backlog-box">
-            <tr>
-                <th width=25%>Toma Gela</th>
-                <th width=15%>IT</th>
-                <th width=40%>HTML und CSS Struktur für Navigation und Backlog anlegen</th>
-            </tr>
-        </table>
+
+        <div id="tasks"></div>
+
+
+    </div>
 
     </div>
 
