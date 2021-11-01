@@ -27,7 +27,7 @@ body {
 }
 
 .bg {
-    background-image: url(img/Erde.jpg);
+    background-image: url(../img/Erde.jpg);
     display: flex;
     align-items: flex-start;
     justify-content: center;
