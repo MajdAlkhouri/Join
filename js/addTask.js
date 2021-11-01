@@ -1,31 +1,7 @@
  setURL('http://developerakademie.com/smallest_backend_ever');
 
 
- let allTasks = [{
-         'taskTitle': 'Css überarbeiten',
-         'taskCategory': 'Development',
-         'taskUrgency': 'Niedrig',
-         'taskDescription': 'Diverse Änderungen vorehmen',
-         'taskCreator': 'Majd',
-         'createdAt': '1635729160974'
-     },
-     {
-         'taskTitle': 'Datenbank implementieren',
-         'taskCategory': 'Development',
-         'taskUrgency': 'Hoch',
-         'taskDescription': 'Fehler beheben',
-         'taskCreator': 'Peter',
-         'createdAt': '1635729335667'
-     },
-     {
-         'taskTitle': 'Projekt neu strukturieren',
-         'taskCategory': 'Management',
-         'taskUrgency': 'Normal',
-         'taskDescription': 'lorem ipsum rv adfvasdgvdy y dg adsrg adfg asdfgadg ad dgadrgadrgasd  asdrfgasdfgdfg sa dg sdfgsd f gsdgsdfg g sdf gh sdfghsf sdfg sdrfgsdg  adfg sdfg sfdgh sfdb',
-         'taskCreator': 'Toma',
-         'createdAt': '1635729654321'
-     }
- ];
+ let allTasks = [];
 
  async function init() {
      await downloadFromServer();
