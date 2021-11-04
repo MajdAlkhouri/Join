@@ -16,11 +16,12 @@ p {
 }
 
 .addTask-container {
-    background-color: #2066ae;
-    opacity: 0.8;
+    background-color: #000000;
+    opacity: 0.25;
     margin-left: 200px;
     margin-top: 30px;
     height: 525px;
+    border: 2px black;
  
 
 }
@@ -82,14 +83,15 @@ p {
 
 .created-task {
     position: absolute;
-    margin-top: 400px;
-    height: 50px;
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 425px;
+    height: 60px;
+    width: 300px;
     background-color: whitesmoke;
     color: rgb(19, 18, 18);
-    text-align: center;
-    padding-top: 20px;
-font-size: 20px;
+font-size: 16px;
 }
 
 .d-none {
