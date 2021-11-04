@@ -17,7 +17,7 @@ p {
 
 .addTask-container {
     background-color: #2066ae;
-    opacity: 0.5;
+    opacity: 0.8;
     margin-left: 200px;
     margin-top: 30px;
     height: 525px;
@@ -27,7 +27,7 @@ p {
 
 .formular-cont {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
 .flex-cont {
@@ -36,7 +36,7 @@ p {
 
 .input-field {
     width: 300px;
-    height: 35px;
+    height: 35px;    
 }
 
 .textarea-height {
@@ -46,7 +46,6 @@ p {
 .btn-cont {
     display: flex;
     justify-content: center;
-
 }
 
 .btn {
@@ -75,4 +74,8 @@ p {
     display: flex;
     align-items: center;
 
+}
+
+.selection-field-width {
+    width: 309px;
 }
