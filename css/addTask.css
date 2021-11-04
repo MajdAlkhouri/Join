@@ -79,3 +79,27 @@ p {
 .selection-field-width {
     width: 309px;
 }
+
+.created-task {
+    position: absolute;
+    margin-top: 400px;
+    height: 50px;
+    width: 400px;
+    background-color: whitesmoke;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding-top: 20px;
+font-size: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+ .d-none:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+ display: block;
+}
