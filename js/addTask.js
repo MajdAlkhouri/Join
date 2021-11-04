@@ -1,4 +1,4 @@
- setURL('http://developerakademie.com/Join/smallest_backend_ever');
+ setURL('http://gruppe-116.developerakademie.net/Join/smallest_backend_ever');
 
 
  let allTasks = [];
@@ -8,7 +8,7 @@
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
  }
 
- function addTask() {
+ async function addTask() {
      let taskTitle = document.getElementById('titleInputfield').value;
      let taskCategory = document.getElementById('selectCategory').value;
      let taskDate = document.getElementById('dateInputfield').value;
@@ -29,7 +29,7 @@
      allTasks.push(task);
 
      let allTasksAsString = JSON.stringify(allTasks);
-     backend.setItem('allTasks', allTasksAsString);
+     await backend.setItem('allTasks', allTasksAsString);
 
      console.log(allTasks);
  }

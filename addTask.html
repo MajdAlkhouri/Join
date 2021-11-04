@@ -22,7 +22,7 @@
             <p>Learning Management System Project</p>
         </div>
         <div>
-            <form class="addTask-container" onsubmit="addTask()">
+            <form class="addTask-container" onsubmit="addTask(); return false">
                 <div class="formular-cont">
                     <div class="flex-cont">
                         <p>TITLE</p>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="btn-cont">
                     <!-- <button class="btn">CANCEL</button> -->
-                    <button class="btn">GREATE TASK</button>
+                    <button type="submit" class="btn">CREATE TASK</button>
                 </div>
             </form>
 
