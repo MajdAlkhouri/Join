@@ -15,7 +15,7 @@
     <title>addTask</title>
 </head>
 
-<body onload="includeHTML(), init()">
+<body onload="includeHTML(),init()">
     <div class="bg">
         <div w3-include-html="templates/navbar.html"> </div>
         <div class="header-container">
@@ -27,7 +27,7 @@
                 <div class="formular-cont" onclick="addDnone()">
                     <div class="flex-cont">
                         <p>TITLE</p>
-                        <input  onfocus="this.value=''" required minlength="8" class="input-field" id="titleInputfield" type="text" placeholder="">
+                        <input onfocus="this.value=''" required minlength="8" class="input-field" id="titleInputfield" type="text" placeholder="">
                         <p>CATEGORY</p>
                         <select required class="input-field selection-field-width" id="selectCategory" placeholder="Kategorie">
                             <option>Marketing</option>
@@ -35,7 +35,7 @@
                             <option>Design</option>
                         </select>
                         <p>DESCRIPTION</p>
-                        <textarea onfocus="this.value=''"  required minlength="15" class="input-field textarea-height" id="descriptionInputfield" cols="30">Describe here...</textarea>
+                        <textarea onfocus="this.value=''" required minlength="15" class="input-field textarea-height" id="descriptionInputfield" cols="30">Describe here...</textarea>
                     </div>
                     <div class="flex-cont">
                         <p>DUE DATE</p>
@@ -53,7 +53,7 @@
                             <img src="img/icon plus.png">
                         </div>
                     </div>
-                    <div id="createtTaskInfo" class="created-task d-none" >NEUER TASK WURDE ERSTELLT</div>
+                    <div id="createtTaskInfo" class="created-task d-none">NEUER TASK WURDE ERSTELLT</div>
                 </div>
                 <div class="btn-cont">
                     <!-- <button class="btn">CANCEL</button> -->

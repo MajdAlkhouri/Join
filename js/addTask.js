@@ -28,12 +28,13 @@
 
      allTasks.push(task);
 
-        document.getElementById('createtTaskInfo').classList.remove('d-none');
+     document.getElementById('createtTaskInfo').classList.remove('d-none');
 
      let allTasksAsString = JSON.stringify(allTasks);
      await backend.setItem('allTasks', allTasksAsString);
 
      console.log(allTasks);
+
  }
 
  function addDnone() {

@@ -14,8 +14,6 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: #2066ae;
-    opacity: 0.5;
     margin-left: 200px;
     z-index: -1;
     position: fixed;
@@ -41,7 +39,7 @@
 }
 
 .backlog-box {
-    width: 80%;
+    height: 100px;
     background-color: white;
     margin-left: 220px;
     margin-right: 50px;
@@ -54,17 +52,27 @@
 }
 
 .titles-backlog {
-    width: 80%;
     height: 100px;
-    background-color: black;
+    background-color: rgba(14, 14, 15, 0.35);
     margin-left: 200px;
 }
 
-.Niedrig {
+.titles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.Low {
     background-color: rgb(20, 92, 10);
     width: 20px;
     height: 100px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transform: scaleX(1.0);
 }
 
 .Normal {
@@ -72,10 +80,10 @@
     width: 20px;
     height: 100px;
     border-radius: 8px;
-    transform: scaleX(0.0);
+    transform: scaleX(1.0);
 }
 
-.Hoch {
+.High {
     background-color: rgb(122, 7, 7);
     width: 20px;
     height: 100px;
@@ -86,4 +94,10 @@
     width: 40%;
     max-height: 100px;
     overflow-y: hidden;
+}
+
+.delete {
+    position: absolute;
+    font-size: 30px;
+    right: 20px
 }
