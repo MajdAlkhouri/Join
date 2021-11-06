@@ -7,7 +7,7 @@ function showTasks() {
         let urgency = allTasks[i]['taskUrgency'];
 
         document.getElementById('tasks').innerHTML += `<div class="backlog-box">
-        <div class="${urgency}" onclick="showUrgency()"></div>
+        <div class="${urgency}"></div><div><img src="../img/Peter.jpg" class="img-profile"></div>
         <div style="width:25%">${Task['taskCreator']}</div>
         <div style="width:10%">${Task['taskCategory']}</div>
         <div class="description">${Task['taskDescription']}></div>

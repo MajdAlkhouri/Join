@@ -98,6 +98,14 @@
 
 .delete {
     position: absolute;
-    font-size: 30px;
-    right: 20px
+    font-size: 12px;
+    right: 59px
+}
+
+.img-profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 60px;
 }
