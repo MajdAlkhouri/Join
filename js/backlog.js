@@ -14,7 +14,7 @@ setTimeout(function showTasks() {
         <button class="delete" onclick="addToTrash(${i})">X</button>
         </div>`;
     }
-}, 1000);
+}, 300);
 
 function addToTrash(position) {
     allTasks.splice([position], 1);
