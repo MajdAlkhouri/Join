@@ -31,3 +31,14 @@ a {
 a:active {
     border-left: 5px solid;
 }
+
+.img-design {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.design-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
