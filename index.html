@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/mini_backend.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/navbar.js"></script>
 
     <title>Join</title>
@@ -18,10 +19,31 @@
 
 <body onload="includeHTML()">
     <div class="bg">
-        <div w3-include-html="templates/navbar.html"> </div>
-       
+        <div id="loginCont" class="wrapper">
+            <div class="container">
+                <form class="form">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" id="login-button" onclick="login()">Login</button>
+                </form>
+            </div>
+            
+            <ul class="bg-bubbles">
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+                <li><img src="../Join/img/joinlogo.png"></li>
+            </ul>
+        </div>
+     
 
-    </div> 
+    </div>   
 </body>
 
 </html>

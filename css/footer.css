@@ -27,13 +27,17 @@ background-color: rgba(14, 14, 15, 0.35);
     margin-right: 50px;
 }
 
+.footer-links a:hover {
+text-decoration: underline 1px;
+}
+
+
 .margin {
     margin-top: -10px;
 }
 
-.img-cont {
-    width: 25px;
-    height: 25px;
+ .img-cont {
+width: 24px;
     margin-right: 20px;
 }
 

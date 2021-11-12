@@ -16,8 +16,7 @@ p {
 }
 
 .addTask-container {
-    background-color: #000000;
-    opacity: 0.25;
+    background-color: rgba(0,0,0, 0.25);
     margin-left: 200px;
     margin-top: 30px;
     height: 525px;
@@ -67,14 +66,19 @@ p {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 60px;
+   
    
 }
 
-.img-cont {
+.creator-cont {
+    width: 300px;
     display: flex;
     align-items: center;
+}
 
+.creator-name {
+    margin-left: 35px;
+    font-size: 18px;
 }
 
 .selection-field-width {
