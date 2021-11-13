@@ -1,4 +1,4 @@
-setTimeout(function showTasks() {
+function showTasks() {
     document.getElementById('tasks').innerHTML = '';
 
     for (let i = 0; i < allTasks.length; i++) {
@@ -14,7 +14,7 @@ setTimeout(function showTasks() {
         <button class="delete" onclick="addToTrash(${i})">X</button>
         </div>`;
     }
-}, 300);
+}
 
 function addToTrash(position) {
     allTasks.splice([position], 1);
