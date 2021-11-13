@@ -17,6 +17,11 @@
 .small-picture {
     height: 70px !important;
     margin-right: 20px;
+    cursor: pointer;
+}
+
+.small-picture:hover {
+    border: 5px solid white;
 }
 
 h1 {

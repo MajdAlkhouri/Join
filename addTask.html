@@ -16,55 +16,55 @@
 </head>
 
 <body onload="includeHTML(),init()">
-    <div class="bg">
-        <div w3-include-html="templates/navbar.html"> </div>
-        <div class="header-container">
-            <span>ADD TASK</span>
-            <p>Learning Management System Project</p>
-        </div>
-        <div>
-            <form class="addTask-container" onsubmit="addTask(); return false">
-                <div class="formular-cont" onclick="addDnone()">
-                    <div class="flex-cont">
-                        <p>TITLE</p>
-                        <input onfocus="this.value=''" required minlength="8" class="input-field" id="titleInputfield" type="text" placeholder="">
-                        <p>CATEGORY</p>
-                        <select required class="input-field selection-field-width" id="selectCategory" placeholder="Kategorie">
+    <img id="bg-image" src="../img/background_images/beach blue.jpg">
+    <div w3-include-html="templates/navbar.html"> </div>
+    <div class="header-container">
+        <span>ADD TASK</span>
+        <p>Learning Management System Project</p>
+    </div>
+    <div>
+        <form class="addTask-container" onsubmit="addTask(); return false">
+            <div class="formular-cont" onclick="addDnone()">
+                <div class="flex-cont">
+                    <p>TITLE</p>
+                    <input onfocus="this.value=''" required minlength="8" class="input-field" id="titleInputfield" type="text" placeholder="">
+                    <p>CATEGORY</p>
+                    <select required class="input-field selection-field-width" id="selectCategory" placeholder="Kategorie">
                             <option>Marketing</option>
                             <option>Development</option>
                             <option>Design</option>
                         </select>
-                        <p>DESCRIPTION</p>
-                        <textarea onfocus="this.value=''" required minlength="15" class="input-field textarea-height" id="descriptionInputfield" cols="30">Describe here...</textarea>
-                    </div>
-                    <div class="flex-cont">
-                        <p>DUE DATE</p>
-                        <input required class="input-field" id="dateInputfield" type="date" onfocus="(this.type='date')">
-                        <p>URGENCY</p>
-                        <select required class="input-field selection-field-width" id="selectUrgency" placeholder="Kategorie">
+                    <p>DESCRIPTION</p>
+                    <textarea onfocus="this.value=''" required minlength="15" class="input-field textarea-height" id="descriptionInputfield" cols="30">Describe here...</textarea>
+                </div>
+                <div class="flex-cont">
+                    <p>DUE DATE</p>
+                    <input required class="input-field" id="dateInputfield" type="date" onfocus="(this.type='date')">
+                    <p>URGENCY</p>
+                    <select required class="input-field selection-field-width" id="selectUrgency" placeholder="Kategorie">
                             <option>Low</option>
                             <option>Normal</option>
                             <option>High</option>
                         </select>
-                        <p>ASSIGNED TO</p>
-                        <div class="img-cont">
-                            <img class="img-profile" src="img/Peter.jpg">
-                            <p id="taskCreator">NAME</p>
-                            <img src="img/icon plus.png">
-                        </div>
+                    <p>ASSIGNED TO</p>
+                    <div class="img-cont">
+                        <img class="img-profile" src="img/Peter.jpg">
+                        <p id="taskCreator">NAME</p>
+                        <img src="img/icon plus.png">
                     </div>
-                    <div id="createtTaskInfo" class="created-task d-none">NEUER TASK WURDE ERSTELLT</div>
                 </div>
-                <div class="btn-cont">
-                    <!-- <button class="btn">CANCEL</button> -->
-                    <button onclick="addTodo()" type="submit" class="btn">CREATE TASK</button>
-                </div>
-            </form>
+                <div id="createtTaskInfo" class="created-task d-none">NEUER TASK WURDE ERSTELLT</div>
+            </div>
+            <div class="btn-cont">
+                <!-- <button class="btn">CANCEL</button> -->
+                <button onclick="addTodo()" type="submit" class="btn">CREATE TASK</button>
+            </div>
+        </form>
 
-        </div>
-
-        <div w3-include-html="templates/footer.html"></div>
     </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
 
     </div>
 
