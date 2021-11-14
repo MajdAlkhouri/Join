@@ -1,15 +1,17 @@
-
 .footer-cont {
-background-color: rgba(14, 14, 15, 0.35);
+    background-color: rgba(14, 14, 15, 0.35);
     border-top: 5px solid #ffffff;
- display: flex;
- justify-content: space-between;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
 
 .copyright {
-        width: 200px;
-        height: 100px;
+    width: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,24 +22,19 @@ background-color: rgba(14, 14, 15, 0.35);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 
 .footer-links p {
     margin-right: 50px;
 }
 
-.footer-links a:hover {
-text-decoration: underline 1px;
-}
-
-
 .margin {
     margin-top: -10px;
 }
 
- .img-cont {
-width: 24px;
+.img-cont {
+    width: 25px;
+    height: 25px;
     margin-right: 20px;
 }
 
@@ -49,4 +46,5 @@ width: 24px;
 
 .footer-links {
     width: 900px;
+    color: white;
 }

@@ -8,31 +8,49 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/backlog.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/mini_backend.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/addTask.js"></script>
     <script src="js/backlog.js"></script>
+    <script src="js/design.js"></script>
     <title>Backlog</title>
 </head>
 
-<body onload="includeHTML(); showTasks()">
-    <div class="bg">
-        <div w3-include-html="templates/navbar.html"> </div>
-        <table class="titles-backlog">
-            <tr>
-                <th width=25% class="title">ASSIGNED TO</th>
-                <th class="title">CATEGORY</th>
-                <th class="title">DETAILS</th>
-            </tr>
-        </table>
-        <div class="backlog-container"></div>
-
-        <div id="tasks"></div>
+<body onload="includeHTML(), init()">
+    <img id="bg-image" src="../img/background_images/beach blue.jpg">
 
 
+    <div class="navbar-container">
+        <img src="img/joinlogo.png">
+        <nav class="navigation">
+            <a href="Board.html">Board</a>
+            <a href="backlog.html" onclick="showTasks()">Backlog</a>
+            <a href="addTask.html">Add Task</a>
+            <a href="#">Help</a>
+        </nav>
+        <div class="design-container">
+            <a href="design.html">Design</a>
+            <img src=../img/farbpalette.png class="img-design">
+        </div>
     </div>
 
+    <div class="titles-backlog">
+        <div class="titles-container">
+            <div class="title">URGENCY</div>
+            <div class="title">ASSIGNED TO</div>
+            <div class="title">CATEGORY</div>
+            <div class="title" style=width:35%>DETAILS</div>
+        </div>
     </div>
+    <div class="backlog-container"></div>
+
+    <div id="tasks"></div>
+
+    <div w3-include-html="templates/footer.html"> </div>
+    </div>
+
+
 
 
 </body>

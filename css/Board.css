@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-image: url('../img/background_images/beach blue.jpg');
+    background-size: cover;
 }
 
 .all {
@@ -16,11 +18,11 @@ body {
 }
 
 .contain h1 {
-    color: white;
+    color: rgb(9, 2, 2);
 }
 
 .ToWrite {
-    background-color: #2066ae;
+    background-color: #047436;
     width: 175px;
     height: 600px;
     opacity: 0.5;
