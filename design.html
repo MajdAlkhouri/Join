@@ -15,19 +15,20 @@
 </head>
 
 <body onload="includeHTML()">
-    <img id="bg-image" src="../img/background_images/beach blue.jpg">
-    <div w3-include-html="templates/navbar.html"> </div>
-    <div class="container-design">
-        <h1>Wähle dein Hintergrundbild</h1>
-        <div class="container-buttons">
-            <img src="../img/background_images/beach blue.jpg" class="small-picture" onclick="picture1()">
-            <img src="../img/background_images/beach green.jpg" class="small-picture" onclick="picture2()">
-            <img src="../img/background_images/bridge.jpg" class="small-picture" onclick="picture3()">
-            <img src="../img/background_images/Erde.jpg" class="small-picture" onclick="picture4()">
-            <img src="../img/background_images/monumental rocks.jpg" class="small-picture" onclick="picture5()">
+    <div id="bg">
+        <div w3-include-html="templates/navbar.html"></div>
+        <div class="container-design">
+            <h1>Wähle dein Hintergrundbild</h1>
+            <div class="container-buttons">
+                <img src="../img/background_images/beach_blue.jpg" class="small-picture" onclick="changeBg1()">
+                <img src="../img/background_images/beach_green.jpg" class="small-picture" onclick="changeBg2()">
+                <img src="../img/background_images/bridge.jpg" class="small-picture" onclick="changeBg3()">
+                <img src="../img/background_images/Erde.jpg" class="small-picture" onclick="changeBg4()">
+                <img src="../img/background_images/monumental_rocks.jpg" class="small-picture" onclick="changeBg5()">
+            </div>
         </div>
+        <div w3-include-html="templates/footer.html"></div>
     </div>
-    <div w3-include-html="templates/footer.html"></div>
 </body>
 
 </html>

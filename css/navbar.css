@@ -9,10 +9,6 @@
     z-index: 5;
 }
 
-div.navbar-container img {
-
-}
-
 .navigation {
     display: flex;
     flex-direction: column;

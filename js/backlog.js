@@ -10,7 +10,7 @@ function showTasks() {
         <div class="${urgency}">${urgency}</div><div><img src="../img/Peter.jpg" class="img-profile"></div>
         <div>${Task['taskCreator']}</div>
         <div>${Task['taskCategory']}</div>
-        <div class="description" style="width:29%">${Task['taskDescription']}></div>
+        <div class="description" style="width:29%">${Task['taskDescription']}</div>
         <button class="delete" onclick="addToTrash(${i})">X</button>
         </div>`;
     }
