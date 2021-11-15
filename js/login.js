@@ -6,5 +6,6 @@
 // });
 
 function login() {
-    document.getElementById('loginCont').classList.addClass('d-none');
+    let loginContainer = document.getElementById('loginContainer');
+    loginContainer.classList.addClass('d-none');
 }

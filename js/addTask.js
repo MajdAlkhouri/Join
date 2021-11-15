@@ -25,7 +25,8 @@
          'taskUrgency': taskUrgency,
          'taskDescription': taskDescription,
          'taskCreator': taskCreator,
-         'createdAt': new Date().getTime()
+         'createdAt': new Date().getTime(),
+         'imgURL': 
      };
 
      allTasks.push(task);
