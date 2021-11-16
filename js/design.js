@@ -2,11 +2,13 @@ function changeBg1() {
 
     document.getElementById('bg').style.backgroundImage = 'url(../img/background_images/beach blue.jpg)';
 
+
 }
 
 function changeBg2() {
 
     document.getElementById('bg').style.backgroundImage = 'url(../img/background_images/beach_green.jpg)';
+
 }
 
 function changeBg3() {
