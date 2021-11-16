@@ -13,38 +13,29 @@
     <script src="js/navbar.js"></script>
     <script src="js/addTask.js"></script>
     <script src="js/backlog.js"></script>
+    <script src="js/design.js"></script>
     <title>Backlog</title>
 </head>
 
 <body onload="includeHTML(), init()">
-    <div class="bg">
+    <div id="bg">
+        <div w3-include-html="templates/navbar.html"></div>
 
-        <div class="navbar-container">
-            <img src="img/joinlogo.png">
-            <nav class="navigation">
-                <a href="Board.html">Board</a>
-                <a href="backlog.html" onclick="showTasks()">Backlog</a>
-                <a href="addTask.html">Add Task</a>
-                <a href="#">Help</a>
-            </nav>
-        </div>
-
-        <div class="titles-backlog ">
+        <div class="titles-backlog">
             <div class="titles-container">
-                <div class="title ">ASSIGNED TO</div>
-                <div class="title ">CATEGORY</div>
-                <div class="title ">DETAILS</div>
+                <div class="title">URGENCY</div>
+                <div class="title">ASSIGNED TO</div>
+                <div class="title">CATEGORY</div>
+                <div class="title" style=width:35%>DETAILS</div>
             </div>
         </div>
         <div class="backlog-container"></div>
 
         <div id="tasks"></div>
 
-        <div w3-include-html="templates/footer.html"> </div>
-    </div>
+        <div w3-include-html="templates/footer.html"></div>
 
     </div>
-
 
 </body>
 
