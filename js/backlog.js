@@ -6,12 +6,14 @@ function showTasks() {
         const Task = allTasks[i];
         let urgency = allTasks[i]['taskUrgency'];
 
-        document.getElementById('tasks').innerHTML += `<div class="backlog-box">
-        <div class="${urgency}">${urgency}</div><div><img src="./img/Peter.jpg" class="img-profile"></div>
-        <div>${Task['taskCreator']}</div>
+        document.getElementById('tasks').innerHTML += `
+        <div class="backlog-box">
+        <div class="${urgency}">${urgency}</div>
+        <div><img src="./img/Peter.jpg" class="img-profile"></div>
+        <span>${Task['taskCreator']}</span>
         <div>${Task['taskCategory']}</div>
         <div class="description" style="width:29%">${Task['taskDescription']}</div>
-        <button class="delete" onclick="addToTrash(${i})">X</button>
+        <img src=./img/trash.png class="delete" onclick="addToTrash(${i})">
         </div>`;
     }
 }
