@@ -7,7 +7,8 @@
      await downloadFromServer();
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
-     showTasks();
+
+     loadBackground();
  }
 
  async function addTask() {
