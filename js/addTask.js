@@ -7,7 +7,7 @@
      await downloadFromServer();
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
-     showTasks();
+     
  }
 
  async function addTask() {
@@ -26,6 +26,7 @@
          'taskDescription': taskDescription,
          'taskCreator': taskCreator,
          'createdAt': new Date().getTime(),
+         'list' : 'toDo'
 
      };
 
