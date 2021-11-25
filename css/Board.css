@@ -22,15 +22,30 @@ body {
 }
 
 .ToWrite {
-    background-color: #047436;
+    background-color: #02ccff;
     width: 175px;
     height: 600px;
     opacity: 0.5;
 }
 
 .bg {
-    background-image: url(../img/Erde.jpg);
+   
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+
+.todo{
+    background-color: #0065fd;
+    height: 100px;
+    border: ridge;
+    width: 100%;
+   
+    text-align: center;
+    
+}
+
+.todo:hover{
+    transform: translate( 1rem, -1rem);
+    background-color: #00a2ff;
 }
