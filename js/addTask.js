@@ -8,7 +8,8 @@
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
 
-     loadBackground();
+
+     showTasks();
  }
 
  async function addTask() {

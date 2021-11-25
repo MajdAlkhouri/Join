@@ -19,7 +19,7 @@ function showTasks() {
 }
 
 async function addToTrash(position) {
-    allTasks.splice([position], 1);
+    allTasks.splice(position, 1);
     let allTasksAsString = JSON.stringify(allTasks);
     await backend.setItem('allTasks', allTasksAsString);
 
