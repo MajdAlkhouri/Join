@@ -17,11 +17,11 @@ function changeBg(i) {
 async function loadBackground(backgrounds) {
     await downloadFromServer();
     currentBg = backend.getItem('background') || backgrounds[0];
-
+    document.getElementById('bg').style.backgroundImage = `url(${currentBg})`;
 
 }
 async function saveBackground(index) {
 
     await backend.setItem('background', backgrounds[index]);
-    document.getElementById('bg').style.backgroundImage = `url(${currentBg})`;
+
 }
