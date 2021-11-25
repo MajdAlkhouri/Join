@@ -5,6 +5,7 @@ let currentBg = '';
 
 function changeBg(i) {
 
+    document.getElementById('bg').style.backgroundImage = '';
 
 
     document.getElementById('bg').style.backgroundImage = `url(${backgrounds[i]})`;
