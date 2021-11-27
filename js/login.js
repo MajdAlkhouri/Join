@@ -6,6 +6,6 @@
 // });
 
 function login() {
-    let loginContainer = document.getElementById('loginContainer');
-    loginContainer.classList.addClass('d-none');
+    document.getElementById('loginContainer').classList.add('d-none');
+    document.getElementById('navbar').classList.remove('d-none');
 }

@@ -3,7 +3,10 @@
 
  let allTasks = [];
 
- async function init() {
+
+ 
+ 
+ function init() {
      await downloadFromServer();
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
@@ -25,8 +28,7 @@
          'taskUrgency': taskUrgency,
          'taskDescription': taskDescription,
          'taskCreator': taskCreator,
-         'createdAt': new Date().getTime(),
-         'imgURL': 
+         'createdAt': new Date().getTime()
      };
 
      allTasks.push(task);
@@ -35,10 +37,9 @@
 
      let allTasksAsString = JSON.stringify(allTasks);
      await backend.setItem('allTasks', allTasksAsString);
-
-     console.log(allTasks);
-
  }
+
+
 
  function addDnone() {
      document.getElementById('createtTaskInfo').classList.add('d-none');
