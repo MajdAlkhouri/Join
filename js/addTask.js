@@ -9,13 +9,16 @@
  function changeCreatorImage() {
      let creator = document.getElementById('taskCreator').value;
      let creatorImg = document.getElementById('creatorImg');
-     if(creator == majd) {
+     if(creator == Majd) {
          creatorImg.src = './img/social_icons/facebook-64.ico';
      }
-     if(creator == toma) {
+     if(creator == Toma) {
         creatorImg.src = './img/social_icons/facebook-64.ico';
     }
-    if(creator == peter) {
+    if(creator == Peter) {
         creatorImg.src = './img/Peter.jpg';
     }
+
+    console.log('creatorImg.src');
+
  }
