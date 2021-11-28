@@ -2,15 +2,11 @@
 
 
  let allTasks = [];
-
-
  
  
- function init() {
+ async function init() {
      await downloadFromServer();
      allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-
-     showTasks();
  }
 
  async function addTask() {
@@ -43,4 +39,21 @@
 
  function addDnone() {
      document.getElementById('createtTaskInfo').classList.add('d-none');
+ }
+
+ function changeCreatorImage() {
+     let creator = document.getElementById('taskCreator').value;
+     let creatorImg = document.getElementById('creatorImg');
+     if(creator == majd) {
+         creatorImg.src = './img/social_icons/facebook-64.ico';
+     }
+     if(creator == toma) {
+        creatorImg.src = './img/social_icons/facebook-64.ico';
+    }
+    if(creator == peter) {
+        creatorImg.src = './img/Peter.jpg';
+    }
+
+
+
  }

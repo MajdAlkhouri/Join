@@ -53,11 +53,11 @@
                         </select>
                         <p>CREATOR</p>
                         <div class="creator-cont">
-                            <img class="img-profile" src="img/Peter.jpg">
-                            <select class="input-field selection-creator" id="taskCreator">
-                                <option value="">Majd</option>
-                                <option value="">Toma</option>
-                                <option value="">Peter</option>
+                            <img id="creatorImg" class="img-profile" src="img/Peter.jpg">
+                            <select class="input-field selection-creator" id="taskCreator" onselect="changeCreatorImage()">
+                                <option value="majd" onforminput="changeCreatorImage()"  >Majd</option>
+                                <option value="toma">Toma</option>
+                                <option value="peter">Peter</option>
 
                             </select>
                         </div>
@@ -65,7 +65,6 @@
                     <div id="createtTaskInfo" class="created-task d-none">NEUER TASK WURDE ERSTELLT</div>
                 </div>
                 <div class="btn-cont">
-                    <!-- <button class="btn">CANCEL</button> -->
                     <button onclick="addTodo()" type="submit" class="btn">CREATE TASK</button>
                 </div>
             </form>
