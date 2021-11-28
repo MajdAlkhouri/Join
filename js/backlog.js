@@ -18,6 +18,5 @@ function showTasks() {
 
 function addToTrash(position) {
     allTasks.splice([position], 1);
-
     showTasks();
 }
