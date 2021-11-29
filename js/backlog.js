@@ -1,3 +1,11 @@
+async function init() {
+    await downloadFromServer();
+    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+
+    loadBackground(backgrounds);
+    showTasks();
+}
+
 function showTasks() {
     document.getElementById('tasks').innerHTML = '';
 
@@ -18,7 +26,10 @@ function showTasks() {
     }
 }
 
-function addToTrash(position) {
-    allTasks.splice([position], 1);
+async function addToTrash(position) {
+    allTasks.splice(position, 1);
+
+    let allTasksAsString = JSON.stringify(allTasks);
+    await backend.setItem('allTasks', allTasksAsString);
     showTasks();
 }

@@ -1,0 +1,36 @@
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 20px;
+}
+
+.help-box {
+    background-color: rgba(14, 14, 15, 0.35);
+    width: 250px;
+    height: 80vh;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.name {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.img-profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bg-white {
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -12,7 +12,7 @@ async function init() {
 
     includeHTML();
 
- 
+
 
 }
 
@@ -64,7 +64,7 @@ function updateHtml() { //!!
 }
 
 
- 
+
 function startDragging(createdAt) {
     currentDraggedElement = createdAt; //!!
 }
@@ -73,11 +73,10 @@ function allowDrop(ev) { //!!!
     ev.preventDefault();
 }
 
- async function moveto(list) {
-const task = todos.find ( t => t.createdAt === currentDraggedElement);
-task.list = list;
-await backend.setItem('allTasks', JSON.stringify(todos)); 
-updateHtml();
+async function moveto(list) {
+    const task = todos.find(t => t.createdAt === currentDraggedElement);
+    task.list = list;
+    await backend.setItem('allTasks', JSON.stringify(todos));
+    updateHtml();
 
 }
-

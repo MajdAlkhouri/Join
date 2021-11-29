@@ -16,15 +16,16 @@
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/Board.js"></script>
+    <script src="js/design.js"></script>
 
 
 
     <title>Board</title>
 </head>
 
-<body onload="init()">
+<body onload="init(), loadBackground()">
 
-    <div class="bg">
+    <div id="bg" class="background">
 
         <div w3-include-html="templates/navbar.html"> </div>
 
