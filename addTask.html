@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="css/addTask.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/mini_backend.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/addTask.js"></script>
     <script src="js/navbar.js"></script>
     <title>addTask</title>
 </head>
 
 <body onload="includeHTML(),init()">
-    <div id="bg">
-        <div w3-include-html="templates/navbar.html"></div>
+    <div class="bg">
+        <div w3-include-html="templates/navbar.html"> </div>
         <div class="header-container">
             <span>ADD TASK</span>
             <p>Learning Management System Project</p>
@@ -48,12 +49,11 @@
                         </select>
                         <p>CREATOR</p>
                         <div class="creator-cont">
-                            <!--<img class="img-profile" src="img/Peter.jpg">
-                            <p id="taskCreator" class="creator-name">Peter Steinlesberger</p> -->
-                            <select class="input-field selection-field-width" id="taskCreator">
-<option value="">Majd</option>
-<option value="">Toma</option>
-<option value="">Peter</option>
+                            <img id="creatorImg" class="img-profile" src="img/icon plus.png">
+                            <select class="input-field selection-creator" id="taskCreator" onchange="changeCreatorImage()">
+                                <option value="majd">Majd</option>
+                                <option value="toma">Toma</option>
+                                <option value="peter">Peter</option>
 
                             </select>
                         </div>
@@ -61,8 +61,7 @@
                     <div id="createtTaskInfo" class="created-task d-none">NEUER TASK WURDE ERSTELLT</div>
                 </div>
                 <div class="btn-cont">
-                    <!-- <button class="btn">CANCEL</button> -->
-                    <button  type="submit" class="btn">CREATE TASK</button>
+                    <button type="submit" class="btn">CREATE TASK</button>
                 </div>
             </form>
 
