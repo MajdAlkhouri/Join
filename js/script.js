@@ -16,6 +16,7 @@ async function addTask() {
     let taskUrgency = document.getElementById('selectUrgency').value;
     let taskDescription = document.getElementById('descriptionInputfield').value;
     let taskCreator = document.getElementById('taskCreator').value;
+    let taskCreatorImg = document.getElementById('creatorImg').src;
 
     let task = {
         'taskTitle': taskTitle,
@@ -24,7 +25,8 @@ async function addTask() {
         'taskUrgency': taskUrgency,
         'taskDescription': taskDescription,
         'taskCreator': taskCreator,
-        'createdAt': new Date().getTime()
+        'createdAt': new Date().getTime(),
+        'creatorImg': taskCreatorImg
     };
 
     allTasks.push(task);
