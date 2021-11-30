@@ -24,7 +24,15 @@
     border: 5px solid white;
 }
 
+.small-picture:active {
+    border: 5px solid white;
+}
+
 h1 {
     text-align: center;
     color: white;
+}
+
+.active-bg {
+    border: 5px solid white;
 }

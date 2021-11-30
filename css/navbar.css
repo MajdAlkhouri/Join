@@ -9,21 +9,22 @@
     z-index: 5;
 }
 
-.navigation {
+#navigation {
     display: flex;
     flex-direction: column;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 25px;
-    font-size: 25px;
-    padding-left: 25px;
+.navlist {
+    text-decoration: none !important;
+    color: white !important;
+    margin-bottom: 25px !important;
+    font-size: 25px !important;
+    padding-left: 25px !important;
 }
 
-a-href:active {
-    border-left: 5px solid;
+.active {
+    border-left: 5px solid !important;
+    color: white !important;
 }
 
 .img-design {
@@ -33,7 +34,7 @@ a-href:active {
     margin-bottom: 25px;
 }
 
-.design-container {
+#design-container {
     display: flex;
     align-items: center;
     margin-top: 60px;
