@@ -3,6 +3,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 #bg {
     background-image: url('../img/background_images/beach_blue.jpg');
     width: 100vw;
@@ -15,4 +17,15 @@ body {
 
 .d-none {
     display: none;
+}
+
+.impressum-style {
+    position: absolute;
+    overflow: scroll;
+    left: 205px;
+    right: 0px;
+ padding: 30px;
+    height: 80%;
+color: whitesmoke;
+overflow-wrap: break-word;
 }
