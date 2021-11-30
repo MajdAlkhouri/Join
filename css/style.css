@@ -21,11 +21,11 @@ body {
 
 .impressum-style {
     position: absolute;
-    overflow: scroll;
     left: 205px;
     right: 0px;
  padding: 30px;
     height: 80%;
 color: whitesmoke;
 overflow-wrap: break-word;
+overflow-y: auto;
 }
