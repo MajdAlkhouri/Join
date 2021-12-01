@@ -14,10 +14,7 @@ for (let j = 0; j < activePicture.length; j++) {
     });
 }*/
 function activeLinkBoard() {
-    document.getElementById('board').classList.add('activelink');
-    document.getElementById('backlog').classList.remove('active');
-    document.getElementById('addTask').classList.remove('active');
-    document.getElementById('help').classList.remove('active');
+    document.getElementById('board').classList.add('active');
 
 
 }
