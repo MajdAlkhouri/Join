@@ -42,17 +42,21 @@ body {
     flex-direction: column;
 }
 
-.backlog-box {
+.row-backlog {
     height: 100px;
-    background-color: white;
+    background-color: white !important;
     margin-left: 220px;
     margin-right: 50px;
-    margin-top: 50px;
     margin-bottom: 30px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.row-backlog::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .titles-backlog {
@@ -122,6 +126,7 @@ body {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 20px;
 }
 
 .profile {
@@ -138,4 +143,33 @@ body {
 
 body::-webkit-scrollbar-thumb {
     background-color: transparent;
+}
+
+.row {
+    margin-left: 205px;
+    background-color: rgba(14, 14, 15, 0.35);
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 10%;
+    margin: 20px;
+}
+
+.middle {
+    width: 20%;
+    margin: 20px;
+}
+
+.right {
+    width: 37%;
 }
