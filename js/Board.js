@@ -91,15 +91,15 @@ async function moveto(list) {
 
 }
 
- async function ToTrash(position,list) {
-     let toDolist = todos.filter( t=> t['list'] === list);
+async function ToTrash(position,list) {
+    let toDolist = todos.filter( t=> t['list'] === list);
 
-     let toDelete = toDolist[position];
-     let posToDelete = todos.indexOf(toDelete);
-    todos.splice(posToDelete, 1);
-    let allTasksAsString = JSON.stringify(todos);
-    await backend.setItem('allTasks',allTasksAsString);
+    let toDelete = toDolist[position];
+    let posToDelete = todos.indexOf(toDelete);
+   todos.splice(posToDelete, 1);
+   let allTasksAsString = JSON.stringify(todos);
+   await backend.setItem('allTasks',allTasksAsString);
 
-    updateHtml();
+   updateHtml();
 
 }
