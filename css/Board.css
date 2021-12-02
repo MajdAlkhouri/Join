@@ -46,3 +46,8 @@ body {
     transform: translate( 1rem, -1rem);
     background-color: #00a2ff;
 }
+
+.delete {
+    width: 30px;
+    margin-right: 20px;
+}

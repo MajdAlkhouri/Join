@@ -12,11 +12,9 @@ async function init() {
 
     includeHTML();
 
-
-
 }
 
-function updateHtml() { //!!
+function updateHtml() { 
 
     let todo = todos.filter(t => !t['list'] || t['list'] == 'toDo'); //!!
 
@@ -25,6 +23,9 @@ function updateHtml() { //!!
     for (let index = 0; index < todo.length; index++) {
         const element = todo[index];
         document.getElementById('toDo').innerHTML += `<div draggable="true" ondragstart="startDragging(${element.createdAt})" class="todo">${todo[index].taskDescription}
+
+        <img src="./img/trash.png" class="delete" onclick="ToTrash(${index}, 'toDo')">
+
         </div>`;
     }
 
@@ -36,6 +37,9 @@ function updateHtml() { //!!
     for (let index = 0; index < inProgress.length; index++) {
         const element = inProgress[index];
         document.getElementById('inProgress').innerHTML += `<div draggable="true" ondragstart="startDragging(${element.createdAt})" class="todo">${inProgress[index].taskDescription}
+
+        <img src="./img/trash.png" class="delete" onclick="ToTrash(${index}, 'inProgress')">
+
         </div>`;
     }
 
@@ -47,6 +51,9 @@ function updateHtml() { //!!
     for (let index = 0; index < testing.length; index++) {
         const element = testing[index];
         document.getElementById('Testing').innerHTML += `<div draggable="true" ondragstart="startDragging(${element.createdAt})" class="todo">${testing[index].taskDescription}
+
+        <img src="./img/trash.png" class="delete" onclick="ToTrash(${index}, 'Testing')">
+
         </div>`;
     }
 
@@ -58,6 +65,9 @@ function updateHtml() { //!!
     for (let index = 0; index < done.length; index++) {
         const element = done[index];
         document.getElementById('Done').innerHTML += `<div draggable="true" ondragstart="startDragging(${element.createdAt})" class="todo">${done[index].taskDescription}
+
+        <img src="./img/trash.png" class="delete" onclick="ToTrash(${index}, 'Done')">
+
         </div>`;
     }
 
@@ -77,6 +87,19 @@ async function moveto(list) {
     const task = todos.find(t => t.createdAt === currentDraggedElement);
     task.list = list;
     await backend.setItem('allTasks', JSON.stringify(todos));
+    updateHtml();
+
+}
+
+ async function ToTrash(position,list) {
+     let toDolist = todos.filter( t=> t['list'] === list);
+
+     let toDelete = toDolist[position];
+     let posToDelete = todos.indexOf(toDelete);
+    todos.splice(posToDelete, 1);
+    let allTasksAsString = JSON.stringify(todos);
+    await backend.setItem('allTasks',allTasksAsString);
+
     updateHtml();
 
 }
