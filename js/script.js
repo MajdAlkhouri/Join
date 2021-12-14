@@ -19,6 +19,8 @@ async function init() {
 
 }
 
+
+
 async function addTask() {
     let taskTitle = document.getElementById('titleInputfield').value;
     let taskCategory = document.getElementById('selectCategory').value;

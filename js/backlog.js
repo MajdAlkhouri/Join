@@ -7,7 +7,7 @@ async function init() {
 
     }, 100);
 
-    loadBackground();
+    loadBackground(backgrounds);
 
     showTasks();
 }
@@ -27,7 +27,7 @@ function showTasks() {
         <div class="${urgency}">${urgency}</div>
         </div>
         <div class="column middle d-flex">
-        <div><img src="./img/Peter.jpg" class="img-profile"></div>
+        <div class="img-profile"><img src ="${Task['creatorImg']}"></div>
         <span>${Task['taskCreator']}</span>
         </div>
         <div class="column middle">${Task['taskCategory']}</div>
