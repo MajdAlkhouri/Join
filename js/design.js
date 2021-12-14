@@ -6,7 +6,7 @@ let currentBg = '';
 function showSmallPictures() {
     for (let i = 0; i < backgrounds.length; i++) {
 
-        document.getElementById('small-pictures').innerHTML += `<a><img src="${backgrounds[i]}" class="small-picture" id="currentpic${i}" onclick="changeBg(${i})"></a>`
+        document.getElementById('small-pictures').innerHTML += `<img src="${backgrounds[i]}" class="small-picture" id="currentpic${i}" onclick="changeBg(${i})">`
     }
 
 
@@ -18,11 +18,11 @@ function activePicture(j) {
 }
 
 function changeBg(j) {
+    let pos = backgrounds.indexOf(currentBg);
 
-    document.getElementById('currentpic' + j).classList.remove('active-picture');
+    document.getElementById('currentpic' + pos).classList.remove('active-picture');
 
     document.getElementById('bg').style.backgroundImage = '';
-
 
     document.getElementById('bg').style.backgroundImage = `url(${backgrounds[j]})`;
 
@@ -32,14 +32,18 @@ function changeBg(j) {
 
 
 
-async function loadBackground(backgrounds) {
+async function loadBackground() {
     await downloadFromServer();
     currentBg = backend.getItem('background') || backgrounds[0];
+    let pos = backgrounds.indexOf(currentBg);
+    activePicture(pos);
     document.getElementById('bg').style.backgroundImage = `url(${currentBg})`;
 
 }
 async function saveBackground(index) {
 
     await backend.setItem('background', backgrounds[index]);
+
+
 
 }
