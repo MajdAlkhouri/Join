@@ -8,10 +8,13 @@ let currentDraggedElement;
 async function init() {
     await downloadFromServer();
     todos = JSON.parse(backend.getItem('allTasks')) || [];
-    updateHtml();
 
     includeHTML();
+    updateHtml();
+    setTimeout(() => {
+        activeLink();
 
+    }, 100)
 }
 
 function updateHtml() {

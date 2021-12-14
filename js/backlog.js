@@ -2,7 +2,13 @@ async function init() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
+    setTimeout(() => {
+        activeLink();
+
+    }, 100);
+
     loadBackground(backgrounds);
+
     showTasks();
 }
 
