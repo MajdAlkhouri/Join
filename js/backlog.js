@@ -7,7 +7,7 @@ async function init() {
 
     }, 100);
 
-    loadBackground(backgrounds);
+    loadBackground();
 
     showTasks();
 }
