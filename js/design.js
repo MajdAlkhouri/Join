@@ -41,7 +41,11 @@ async function loadBackground() {
     await downloadFromServer();
     currentBg = backend.getItem('background') || backgrounds[0];
     let pos = backgrounds.indexOf(currentBg);
-    document.getElementById('currentpic' + pos).classList.add('active-picture');
+
+    if (window.location.href.endsWith('design.html')) {
+        document.getElementById('currentpic' + pos).classList.add('active-picture');
+    }
+
     document.getElementById('bg').style.backgroundImage = `url(${currentBg})`;
 
 }
