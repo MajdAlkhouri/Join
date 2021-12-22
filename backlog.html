@@ -10,27 +10,26 @@
     <link rel="stylesheet" href="css/backlog.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/mini_backend.js"></script>
-    <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/backlog.js"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/design.js"></script>
+    <script src="js/backlog.js"></script>
+
 
 
     <title>Backlog</title>
 </head>
 
-<body onload="includeHTML(), init()">
+<body onload="includeHTML(),init()">
     <div id="bg">
         <div w3-include-html="templates/navbar.html"></div>
-
-        <div class="titles-backlog">
-            <div class="titles-container">
-                <div class="title">URGENCY</div>
-                <div class="title">ASSIGNED TO</div>
-                <div class="title">CATEGORY</div>
-                <div class="title" style=width:35%>DETAILS</div>
-            </div>
+        <div class="row">
+            <div class="column left title">URGENCY</div>
+            <div class="column middle title">ASSIGNED TO</div>
+            <div class="column middle title">CATEGORY</div>
+            <div class="column right title">DETAILS</div>
         </div>
+
         <div class="backlog-container"></div>
 
         <div id="tasks"></div>

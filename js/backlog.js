@@ -2,7 +2,13 @@ async function init() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
 
-    loadBackground(backgrounds);
+    setTimeout(() => {
+        activeLink();
+
+    }, 100);
+
+    loadBackground();
+
     showTasks();
 }
 
@@ -15,13 +21,18 @@ function showTasks() {
         let urgency = allTasks[i]['taskUrgency'];
 
         document.getElementById('tasks').innerHTML += `
-        <div class="backlog-box">
+        
+        <div class="row-backlog">
+        <div class="column left d-flex">
         <div class="${urgency}">${urgency}</div>
-        <div><img src="./img/Peter.jpg" class="img-profile"></div>
+        </div>
+        <div class="column middle d-flex">
+        <div class="img-profile"><img src ="${Task['creatorImg']}"></div>
         <span>${Task['taskCreator']}</span>
-        <div>${Task['taskCategory']}</div>
-        <div class="description" style="width:29%">${Task['taskDescription']}</div>
-        <img src=./img/trash.png class="delete" onclick="addToTrash(${i})">
+        </div>
+        <div class="column middle">${Task['taskCategory']}</div>
+        <div class="column right">${Task['taskDescription']}</div>
+        <div><img src=./img/trash.png class="delete" onclick="addToTrash(${i})"></div>
         </div>`;
     }
 }

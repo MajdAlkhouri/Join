@@ -25,3 +25,23 @@ function includeHTML() {
         }
     }
 }
+
+function activeLink() {
+    let currentPage = window.location.href;
+    if (currentPage.endsWith('addTask.html')) {
+        document.getElementById('addTask').classList.add('active');
+    }
+    if (currentPage.endsWith('Board.html')) {
+        document.getElementById('board').classList.add('active');
+    }
+    if (currentPage.endsWith('backlog.html')) {
+        document.getElementById('backlog').classList.add('active');
+    }
+    if (currentPage.endsWith('help.html')) {
+        document.getElementById('help').classList.add('active');
+    }
+    if (currentPage.endsWith('design.html')) {
+        document.getElementById('design').classList.add('active');
+    }
+
+}

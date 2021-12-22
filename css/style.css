@@ -3,8 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 #bg {
     background-image: url('../img/background_images/beach_blue.jpg');
     width: 100vw;
@@ -13,6 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
 .d-none {
@@ -23,9 +22,20 @@ body {
     position: absolute;
     left: 205px;
     right: 0px;
- padding: 30px;
+    padding: 30px;
     height: 80%;
-color: whitesmoke;
-overflow-wrap: break-word;
-overflow-y: auto;
+    color: whitesmoke;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 20px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
