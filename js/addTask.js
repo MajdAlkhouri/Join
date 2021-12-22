@@ -6,10 +6,10 @@ function changeCreatorImage() {
     let creator = document.getElementById('taskCreator').value;
     let creatorImg = document.getElementById('creatorImg');
     if (creator == 'majd') {
-        creatorImg.src = './img/social_icons/facebook-64.ico';
+        creatorImg.src = './img/Majd.jpeg';
     }
     if (creator == 'toma') {
-        creatorImg.src = './img/icon plus.png';
+        creatorImg.src = './img/Toma.jpeg';
     }
     if (creator == 'peter') {
         creatorImg.src = './img/Peter.jpg';
