@@ -14,7 +14,7 @@ async function init() {
     setTimeout(() => {
         activeLink();
 
-    }, 100)
+    }, 50)
 }
 
 function updateHtml() {
