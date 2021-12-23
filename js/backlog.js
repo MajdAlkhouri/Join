@@ -27,7 +27,7 @@ function showTasks() {
         <div class="${urgency}">${urgency}</div>
         </div>
         <div class="column middle d-flex">
-        <div><img src ="${Task['creatorImg']} class="img-profile""></div>
+        <div><img src ="${Task['creatorImg']}" class="img-profile"></div>
         <span>${Task['taskCreator']}</span>
         </div>
         <div class="column middle">${Task['taskCategory']}</div>
