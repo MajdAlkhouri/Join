@@ -170,5 +170,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .right {
-    width: 37%;
+    width: 37%;   
+}
+
+.descriptionBox {
+   overflow-y: scroll;
+    max-height: 100px; 
 }

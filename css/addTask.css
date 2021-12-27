@@ -66,9 +66,7 @@ p {
     height: 65px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% 0%;
-
-
+    object-position: 100% 10%;
 }
 
 .creator-cont {
