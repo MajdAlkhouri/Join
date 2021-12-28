@@ -31,7 +31,7 @@ function changeBg(j) {
 
 async function loadBackground() {
     await downloadFromServer();
-    currentBg = backend.getItem('background');
+    currentBg = backend.getItem('background') || backgrounds[0];
     let pos = backgrounds.indexOf(currentBg);
 
     if (window.location.href.endsWith('design.html')) {
