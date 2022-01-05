@@ -1,8 +1,22 @@
 setURL('http://gruppe-116.developerakademie.net/Join/smallest_backend_ever');
 
-let registredUser = []
+let registredUser = [{
+        username: 'majd',
+        password: '1234'
 
+    },
+    {
+        username: 'peter',
+        password: '5678'
+    },
 
+    {
+        username: 'toma',
+        password: '91011'
+    }
+]
+
+/*
 async function loadUser() {
     await downloadFromServer();
     registredUser = JSON.parse(backend.getItem('newUser')) || [];
@@ -28,7 +42,7 @@ async function userRegistration() {
 
 
 }
-
+*/
 function login() {
 
     let username = document.getElementById('username').value;
@@ -38,6 +52,8 @@ function login() {
 
         if (username == registredUser[i].username && password == registredUser[i].password) {
             window.location.href = 'addTask.html';
+
+            alert('you are successfully logged in!');
 
             console.log(username + 'is logged in!!')
         }
