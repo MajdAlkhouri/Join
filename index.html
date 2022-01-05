@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/mini_backend.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/login.js"></script>
     <script src="js/design.js"></script>
 
@@ -20,16 +21,15 @@
     <title>Join</title>
 </head>
 
-<body>
+<body onload=init()>
     <div id="bg">
 
         <div class="form-box">
-            <div class="header-text">
-                Login Form
-            </div>
+            <div class="img-login-container"><img src="img/logo2.png" class="img-login"></div>
             <input id="username" placeholder="Your Username" type="text">
             <input id="password" placeholder="Your Password" type="password">
             <button onclick="login()">login</button>
+            <div class="guest-link"><a href="addTask.html">guest login</a></div>
         </div>
     </div>
 </body>
