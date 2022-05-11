@@ -53,7 +53,20 @@
 }
 
 @media(max-width:900px) {
+    .copyright {
+        height: 60px;
+    }
+    .footer-links {
+        width: 600px;
+        color: white;
+        left: 0;
+    }
     .hide-mobile {
         display: none;
+    }
+    a {
+        text-decoration: none !important;
+        color: white;
+        font-size: 15px;
     }
 }

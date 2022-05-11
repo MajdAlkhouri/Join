@@ -16,33 +16,6 @@ let registredUser = [{
     }
 ]
 
-/*
-async function loadUser() {
-    await downloadFromServer();
-    registredUser = JSON.parse(backend.getItem('newUser')) || [];
-}
-
-
-
-
-async function userRegistration() {
-
-    let newUsername = document.getElementById('newusername').value;
-    let newPassword = document.getElementById('newpassword').value;
-
-    let newUser = {
-        username: newUsername,
-        password: newPassword
-    }
-
-    registredUser.push(newUser);
-
-    let registredUserAsString = JSON.stringify(newUser);
-    await backend.setItem('newUser', registredUserAsString);
-
-
-}
-*/
 function login() {
 
     let username = document.getElementById('username').value;
