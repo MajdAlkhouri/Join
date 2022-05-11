@@ -36,7 +36,7 @@ async function addTask() {
 
     allTasks.push(task);
 
-    document.getElementById('createtTaskInfo').classList.remove('d-none');
+    document.getElementById('createtTaskInfo').classList.remove('hide');
 
     let allTasksAsString = JSON.stringify(allTasks);
     await backend.setItem('allTasks', allTasksAsString);

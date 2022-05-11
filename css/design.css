@@ -43,3 +43,16 @@ h1 {
 .active-bg {
     border: 5px solid white;
 }
+
+@media(max-width:900px) {
+    .container-design {
+        left: 0;
+        top: 42px;
+        bottom: 20px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+}

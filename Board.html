@@ -27,36 +27,38 @@
 
 <body onload="init(), loadBackground()">
 
-    <div id="bg" class="background">
-
-        <div w3-include-html="templates/navbar.html"> </div>
-
-
+    <div id="bg">
+        <div>
+            <div w3-include-html="templates/navbar.html"> </div>
 
 
 
 
-        <div class="all">
-            <div class="contain">
-                <h1>TO DO</h1>
-                <div id="toDo" class="ToWrite" ondrop="moveto('toDo')" ondragover="allowDrop(event)"></div>
+
+            <div class="column-container">
+                <div class="all">
+                    <div class="contain">
+                        <h1>TO DO</h1>
+                        <div id="toDo" class="ToWrite" ondrop="moveto('toDo')" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div class="contain">
+                        <h1>IN PROGRESS</h1>
+                        <div id="inProgress" class="ToWrite" ondrop="moveto('inProgress')" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div class="contain">
+                        <h1>TESTING</h1>
+                        <div id="Testing" class="ToWrite" ondrop="moveto('Testing')" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div class="contain">
+                        <h1>DONE</h1>
+                        <div id="Done" class="ToWrite" ondrop="moveto('Done')" ondragover="allowDrop(event)"></div>
+                    </div>
+                </div>
             </div>
-            <div class="contain">
-                <h1>IN PROGRESS</h1>
-                <div id="inProgress" class="ToWrite" ondrop="moveto('inProgress')" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="contain">
-                <h1>TESTING</h1>
-                <div id="Testing" class="ToWrite" ondrop="moveto('Testing')" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="contain">
-                <h1>DONE</h1>
-                <div id="Done" class="ToWrite" ondrop="moveto('Done')" ondragover="allowDrop(event)"></div>
-            </div>
+
         </div>
 
-    </div>
-    <div w3-include-html="templates/footer.html"> </div>
+        <div w3-include-html="templates/footer.html"> </div>
 </body>
 
 </html>

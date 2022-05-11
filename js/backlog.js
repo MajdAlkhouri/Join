@@ -31,7 +31,7 @@ function showTasks() {
         <span>${Task['taskCreator']}</span>
         </div>
         <div class="column middle">${Task['taskCategory']}</div>
-        <div class="column right descriptionBox">${Task['taskDescription']}</div>
+        <div class="column text descriptionBox">${Task['taskDescription']}</div>
         <div><img src=./img/trash.png class="delete" onclick="addToTrash(${i})"></div>
         </div>`;
     }

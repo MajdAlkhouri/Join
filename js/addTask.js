@@ -13,7 +13,7 @@ async function init() {
 
 
 function addDnone() {
-    document.getElementById('createtTaskInfo').classList.add('d-none');
+    document.getElementById('createtTaskInfo').classList.add('hide');
 }
 
 function changeCreatorImage() {

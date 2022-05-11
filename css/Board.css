@@ -1,40 +1,31 @@
-body {
-    margin: 0;
-    background-image: url('../img/background_images/beach_blue.jpg');
-    background-size: cover;
-}
-
 .all {
     display: flex;
     justify-content: space-between;
-    width: 850px;
+    width: 900px;
 }
-
-
 
 .contain h1 {
     color: whitesmoke;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .ToWrite {
     background-color: rgba(14, 14, 15, 0.35);
     width: 200px;
-    min-height: 200px;
-    max-height: 500px;
+    height: 70vh;
     overflow-y: auto;
 }
 
-.background {
+.column-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: 200px
 }
 
 .todo {
-    background-color: #0065fd;
-  
-    border: ridge;
-    
+    background-color: #ffffff;
     text-align: center;
     overflow-wrap: break-word;
     margin: 5px;
@@ -42,33 +33,49 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: inherit;
-
+    touch-action: none;
 }
 
 .todo:hover {
-    transform: translate(0,9rem, -1rem);
+    transform: translate(0, 9rem, -1rem);
     background-color: #00a2ff;
 }
 
-.spanTitel{
+.spanTitel {
     font-size: x-large;
-    font-family: 'Circular-Loom';
-    color: white;
+    color: rgb(1, 1, 1);
+    border-bottom: 1px solid #80808099;
 }
 
-.spanD{
+.spanD {
     margin: 5px;
     font-size: large;
-    font-family: "Times New Roman", Times, serif;
     text-align: center;
-  /*  overflow-y: scroll;
-    max-height: 150px;
-    min-height: 50px;  */
 }
-
 
 .delete {
     width: 25px;
     margin: 5px;
     height: 25px;
+}
+
+@media(max-width:900px) {
+    .contain {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .column-container {
+        margin-left: 0;
+    }
+    .all {
+        width: 100vw;
+        overflow-x: scroll;
+        margin-top: 25px;
+    }
+    .contain h1 {
+        font-size: 20px;
+    }
+    .ToWrite {
+        width: 180px;
+    }
 }

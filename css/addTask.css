@@ -21,8 +21,6 @@ p {
     margin-top: 30px;
     height: 525px;
     border: 2px black;
-
-
 }
 
 .formular-cont {
@@ -80,7 +78,6 @@ p {
     width: 220px;
 }
 
-
 .selection-field-width {
     width: 309px;
 }
@@ -98,7 +95,7 @@ p {
     font-size: 16px;
 }
 
-.d-none {
+.hide {
     display: none;
 }
 
@@ -108,4 +105,29 @@ p {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
     display: block;
+}
+
+@media(max-width:900px) {
+    .formular-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .addTask-container {
+        margin-left: 0;
+        overflow-y: scroll;
+    }
+    .flex-cont {
+        width: auto;
+    }
+    .footer-links {
+        width: 0;
+        color: white;
+        margin-left: 250px;
+    }
+    .header-container {
+        margin-left: 10px;
+        margin-top: 8px;
+        padding-top: 0;
+    }
 }
