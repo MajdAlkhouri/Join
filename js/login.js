@@ -1,4 +1,4 @@
-setURL('http://gruppe-116.developerakademie.net/Join/smallest_backend_ever');
+setURL('https://gruppe-116.developerakademie.net/Join/smallest_backend_ever');
 
 let registredUser = [{
         username: 'majd',

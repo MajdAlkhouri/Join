@@ -84,8 +84,8 @@
     }
     .icon {
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 40px;
+        top: 30px;
     }
     #design-container {
         justify-content: center;

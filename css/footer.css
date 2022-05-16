@@ -60,6 +60,10 @@
         width: 600px;
         color: white;
         left: 0;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .hide-mobile {
         display: none;
